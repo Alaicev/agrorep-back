@@ -4,7 +4,7 @@ const users = require('./routes/users.routes');
 const report = require('./routes/report.routes.js')
 
 const app = express();
-const PORT = process.env.ROPT || 5000;
+const PORT = process.env.ROPT || 5070;
 app.use(
   cors({
     origin: "*",
