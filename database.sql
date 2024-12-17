@@ -18,5 +18,4 @@ create table report (
 create table machine (
   id SERIAL PRIMARY KEY,
   name VARCHAR(225),
-  code VARCHAR(225)
 )
