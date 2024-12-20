@@ -2,10 +2,10 @@ const db = require("../db");
 
 class Report {
   async createReport (req, res) {
-    const {name, email, message, codemach} = req.body
+    const {hourse, message, machcode} = req.body
     console.log(req.body)
     try {
-      const newReport = db.query("INSERT INTO report (name, email, message, codemach) values ($1, $2, $3, $4) RETURNING *", [name, email, message, codemach])
+      const newReport = db.query("INSERT INTO report (hourse, message, machcode) values ($1, $2, $3) RETURNING *", [hourse, message, machcode])
       res.status(200).json("Записть добавлена")
     } catch (error) {
       res.status(400).json({message: error.message})
