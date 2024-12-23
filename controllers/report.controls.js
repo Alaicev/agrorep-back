@@ -12,7 +12,7 @@ class Report {
     }
   }
   async getAllReoId (req, res) {
-    const { id } = req.body
+    const id  = req.params.id
     try {
       const allRep = await db.query("SELECT * FROM report where machcode = $1", [id])
     res.status(200).json(allRep.rows)
