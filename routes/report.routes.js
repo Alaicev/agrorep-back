@@ -4,5 +4,6 @@ const ReportController = require("../controllers/report.controls")
 const ReportRouter = new Router()
 
 ReportRouter.post("/report", ReportController.createReport)
+ReportRouter.get("/report", ReportController.getAllReoId)
 
 module.exports = ReportRouter

@@ -11,6 +11,15 @@ class Report {
       res.status(400).json({message: error.message})
     }
   }
+  async getAllReoId (req, res) {
+    const { id } = req.body
+    try {
+      const allRep = await db.query("SELECT * FROM report where machcode = $1", [id])
+    res.status(200).json(allRep.rows)
+    } catch (error) {
+      res.status(400).json({message: error.message})
+    }
+  }
 }
 
 module.exports = new Report()
