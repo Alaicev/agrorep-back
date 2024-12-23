@@ -11,7 +11,7 @@ create table report (
   id SERIAL PRIMARY KEY,
   hourse VARCHAR(225),
   message VARCHAR(225),
-  machcode VARCHAR(225)
+  machcode INTEGER
 );
 
 create table machine (

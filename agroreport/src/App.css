@@ -1,0 +1,38 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  background-color: rgb(235, 235, 235);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+  background-color: #3586FF;
+  cursor: pointer;
+
+}
+
+.title-container {
+  background-color: #3586FF;
+  padding: 40px 0;
+}
+
+.title {
+  color: white;
+}
+
